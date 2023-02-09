@@ -37,7 +37,7 @@ a:hover {
 
 body {
   margin: 0;
-  min-width: 320px;
+  margin-bottom: 3rem;
   min-height: 100vh;
 }
 
@@ -133,7 +133,7 @@ main {
   justify-content: center;
   gap: 2rem;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1080px;
   padding: 0 1rem;
 }
 
@@ -176,6 +176,56 @@ main {
   margin: 1rem 0;
   object-fit: cover;
   opacity: 0.8;
+}
+
+/* Form styling */
+
+.form-group,
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.form-input {
+  padding: 0.5rem;
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 1px solid #c44585;
+}
+
+.form-input::placeholder {
+  color: #c44585;
+}
+
+.btn-submit {
+  background: linear-gradient(90deg, #f857a8 0%, #c44585 100%);
+
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 /* Introduction styling */
